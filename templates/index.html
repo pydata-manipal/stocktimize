@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Optimization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <p>Enter comma separated ticker symbols of your favourite stocks </p>
+        <form action="{{url_for('portfolio')}}" method="POST">    
+        <input type="text" name="stock" id="stock" style="width: 300px" value="DMART.NS, RCOM.NS, TCS.NS, MRF.NS">
+        <input type="submit" name="submit" value="Optimize">
+        </form>
+</body>
+</html>

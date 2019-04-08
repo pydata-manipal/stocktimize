@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Stocktimize</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Cryptocurrency Landing Page Template">
+	<meta name="keywords" content="cryptocurrency, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link rel= "shortcut icon" href= "{{ url_for('static',filename='img/Logo2.png') }}">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel= "stylesheet" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+	<link rel= "stylesheet" href= "{{ url_for('static',filename='css/font-awesome.min.css') }}">
+	<link rel= "stylesheet" href= "{{ url_for('static',filename='css/themify-icons.css') }}">
+	<link rel= "stylesheet" href= "{{ url_for('static',filename='css/animate.css') }}">
+	<link rel= "stylesheet" href= "{{ url_for('static',filename='css/owl.carousel.css') }}">
+	<link rel= "stylesheet" href= "{{ url_for('static',filename='css/style.css') }}">
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section clearfix">
+		<div class="container-fluid">
+			<a href="{{url_for('home')}}" class="site-logo">
+				<p style="font-size: 60px">Stocktimize</p>
+			</a>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Hero section -->
+	<section class="hero-section">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 hero-text">
+					<h2>Optimize your <br><span>stock portfolio</span></h2>
+					<h3>Enter comma separated ticker symbols of your favourite stocks</h3>
+					<h3><br><span>Try the demo</span></h3>
+					<form action="{{url_for('portfolio')}}" method="POST" class="hero-subscribe-from">
+						<input type="text" name="stock" id="stock" placeholder="Enter stocks" value="DMART.NS, RCOM.NS, TCS.NS, MRF.NS">
+						<button class="site-btn sb-gradients">Optimize</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- Hero section nd -->
+	
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				
+	<!--====== Javascripts & Jquery ======-->
+
+	<script src="{{url_for('static',filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+</html>
